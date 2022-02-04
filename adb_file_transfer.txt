@@ -1,5 +1,13 @@
 Adb file transfer multiple
 
+https://stackoverflow.com/questions/7609270/not-able-to-access-adb-in-os-x-through-terminal-command-not-found
+
+cd ~/Library/Android/sdk/platform-tools
+.adb shell
+
+./adb shell ls sdcard/DCIM/Camera/PXL_202107* | tr '\r' ' ' | xargs -n1 ./adb pull
+
+
 https://stackoverflow.com/questions/10050925/how-do-i-adb-pull-all-files-of-a-folder-present-in-sd-card
 
 Single File/Folder using pull:
